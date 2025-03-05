@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1><marquee id="scroll" direction="left"> </marquee> Weaather App</h1>
+    <div class="city-input">
+      <input id="entercity" type="text" placeholder="Enter City Name" />
+      <button onclick="sendReq()">Submit</button>
+    </div>
+    <div class="weather-data-wrapper">
+      <p>
+        <span id="citynm">City </span>
+        <span id="statenm">State </span>
+        <span id="connm">Country</span></p>
+      <div class="weather-data">
+        <div class="img-wrapper">
+          <img id="image"
+            src=""
+            alt=""
+          />
+          <p id="weather">------</p>
+        </div>
+        <div class="temp"><span id="tempe">--</span> °C</div>
+        <div class="">
+          <p>Wind: <span id="wind">--</span> Km/h</p>
+
+          <p>Precip: <span id="precip">--</span> mm</p>
+
+          <p>Pressure: <span id="pressure" >--</span> mb</p>
+        </div>
+      </div>
+    </div>
+    <!-- 🫵🫵🤝🤝🏩🏩 -->
+    <script src="script.js"></script>
+  </body>
+</html>
