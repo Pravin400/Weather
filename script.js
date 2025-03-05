@@ -15,7 +15,7 @@ const pressure1 = document.getElementById("pressure");
 const scroll = document.getElementById("scroll");
 function sendReq(){
     const city = document.getElementById("entercity").value;
-    const Api = `https://api.weatherstack.com/current?access_key=5dd8b72524273aacd09a33d0e5aa300f&query=${city}`;
+    const Api = `https://api.weatherstack.com/current?access_key=14f85c32437995314564e431a94ce28a&query=${city}`;
     fetch(Api)
     .then((res) => res.json())
     .then((data)=>{
