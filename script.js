@@ -15,7 +15,7 @@ const pressure1 = document.getElementById("pressure");
 const scroll = document.getElementById("scroll");
 function sendReq(){
     const city = document.getElementById("entercity").value;
-    const Api = `https://api.weatherstack.com/current?access_key=14f85c32437995314564e431a94ce28a&query=${city}`;
+    const Api = `https://api.weatherstack.com/current?access_key=fb1c3f67b97dbc0dbee397c484aa33d9&query=${city}`;
     fetch(Api)
     .then((res) => res.json())
     .then((data)=>{
@@ -35,7 +35,7 @@ function sendReq(){
         windspeed.innerHTML = data.current.wind_speed;
         precip1.innerHTML = data.current.precip;
         pressure1.innerHTML = data.current.pressure;
-        const quote = "Good morning, sunshine! May your day be as bright and beautiful as you are."
+        const quote = "Good morning, Srushti !! May your day be as bright and beautiful as you are, and our goal is to complete the today's target."
         scroll.innerHTML = quote;
     })
     .catch((err) =>{alert("!!!Error In Fetcching The Data, !!! Please ECheck The City Name !!! ", err)
