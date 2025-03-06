@@ -35,7 +35,7 @@ function sendReq(){
         windspeed.innerHTML = data.current.wind_speed;
         precip1.innerHTML = data.current.precip;
         pressure1.innerHTML = data.current.pressure;
-        const quote = "Good morning, Srushti !! May your day be as bright and beautiful as you are, and our goal is to complete the today's target."
+        const quote = "Good morning, Sunshine !! May your day be as bright and beautiful as you are, and our goal is to complete the today's target."
         scroll.innerHTML = quote;
     })
     .catch((err) =>{alert("!!!Error In Fetcching The Data, !!! Please ECheck The City Name !!! ", err)
